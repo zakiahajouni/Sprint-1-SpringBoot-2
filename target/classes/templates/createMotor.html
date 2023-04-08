@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="template">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Motor</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <script type="text/javascript" src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div layout:fragment="Mycontent">
+    <div class="container mt-5">
+        <div class="card-body">
+            <form action="saveMotor" method="post">
+                <div class="form-group">
+                    <label class="control-label">Name Motor :</label>
+                    <input type="text" name="nameMotor" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Price :</label>
+                    <input type="text" name="priceMotor" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Date of Creation :</label>
+                    <input type="date" name="date" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Maximum Speed  :</label>
+                    <input type="text" name="maxSpeedMotor" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Color  :</label>
+                    <input type="text" name="colorMotor" class="form-control"/>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+        <br/>
+        <br/>
+        <a href="ListeMotors">List Of Motors</a>
+    </div>
+</div>
+</body>
+</html>
